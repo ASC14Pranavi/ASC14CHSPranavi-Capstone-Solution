@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "f675f75c-c540-41f7-97e7-bd635f82ae2f",
+		"name": "ATS Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369782"
+	},
+	"item": [
+		{
+			"name": "airports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/airports/AP0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"airports",
+						"AP0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airports",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Chennai Airport\",\r\n    \"city\":\"Chennai\",\r\n    \"country\":\"India\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/airports/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"airports",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airports",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"city\":\"Visakhapatnam\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/airports/update/AP0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"airports",
+						"update",
+						"AP0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "airports",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/airports/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"airports",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking_details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chandu\"  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/bookings/update/BD0005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"bookings",
+						"update",
+						"BD0005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking_details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bindu\",\r\n    \"seatNumber\": 35,\r\n    \"ticketPrice\": 150,\r\n    \"total\": 150,\r\n    \"departureDate\": \"2024-08-30\",\r\n    \"departureTime\": \"14:00:00\",\r\n    \"arrivalDate\": \"2024-08-31\",\r\n    \"arrivalTime\": \"16:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/bookings/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"bookings",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking_details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/bookings/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"bookings",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking_details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/bookings/delete/BD0003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"bookings",
+						"delete",
+						"BD0003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-ats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Nandu@example.com\",\r\n     \"password\": \"Nandu@2\"\r\n   \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tanvi\",\r\n  \"email\": \"Tanvii@example.com\",\r\n  \"password\": \"Tanvi@110\",\r\n  \"phoneNumber\": \"9023306033\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8011/signup/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"signup",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "planes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 1,\r\n    \"name\": \"Boeing 747\",\r\n    \"capacity\": 416,\r\n    \"model\": \"747-400\",\r\n    \"manufacturer\": \"Boeing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/planes/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"planes",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "planes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"model\": \"70-600\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/planes/update/PI0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"planes",
+						"update",
+						"PI0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "planes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\": \"Indigo\",\r\n    \"capacity\": 800,\r\n    \"model\": \"70-550\",\r\n    \"manufacturer\": \"Indigo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/planes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"planes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "planes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8021/planes/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"planes",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
